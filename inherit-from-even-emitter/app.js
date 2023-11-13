@@ -2,6 +2,7 @@ var EventEmitter = require('node:events');
 var util = require('node:util');
 
 function Greetr() {
+    EventEmitter.call(this);
     this.greeting = 'Hello world!';
 }
 
